@@ -1,12 +1,6 @@
 var http = require('http');
 const tmi = require('tmi.js');
 
-var server = http.createServer(function(req, res) {
-    res.writeHead(200);
-});
-server.listen(process.env.PORT || '3000');
-
-// Define configuration options
 const opts = {
   identity: {
     username: "xauxaubot",
@@ -72,3 +66,10 @@ function onConnectedHandler (addr, port) {
 function getPosition(string, subString, index) {
     return string.split(subString, index).join(subString).length;
 }
+
+let server = http.createServer(function(req, res) {
+    res.writeHead(200);
+    res.write('Dino Anti Shit');
+});
+
+server.listen(process.env.PORT || '3000');
