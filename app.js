@@ -1,4 +1,10 @@
+var http = require('http');
 const tmi = require('tmi.js');
+
+var server = http.createServer(function(req, res) {
+    res.writeHead(200);
+});
+server.listen(process.env.PORT || '3000');
 
 // Define configuration options
 const opts = {
