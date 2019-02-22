@@ -39,6 +39,7 @@ function onMessageHandler (target, context, msg, self) {
         if(msg.includes('minutes') || msg.includes('minute')) {
             let minutes;
             if(msg.includes('hour') || msg.includes('hours')) {
+                authorized.push(msg.substring(msg.indexOf('Age > ') + 6, pos - 1).toLowerCase());
                 return;
             } else {
                 minutes = msg.substring(pos + 2, msg.indexOf(' minute'));
