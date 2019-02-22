@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/xxnonameboyzz/twitchbot/issues"
   },
-  "homepage": "https://github.com/xxnonameboyzz/twitchbot#readme"
+  "homepage": "https://github.com/xxnonameboyzz/twitchbot#readme",
+  "dependencies": {
+    "tmi.js": "^1.3.1"
+  }
 }
