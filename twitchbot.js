@@ -8,7 +8,7 @@ const opts = {
   },
   channels: [
     "xauxaubot",
-    "fodilhaodobosque"
+    "dinobosss"
   ]
 };
 
@@ -47,12 +47,12 @@ function onMessageHandler (target, context, msg, self) {
 
             if(parseInt(minutes) < 5) {
                 banUser = msg.substring(msg.indexOf('Age > ') + 6, pos - 1);
-                client.say('#fodilhaodobosque', '/ban ' + banUser)
+                client.say('#dinobosss', '/ban ' + banUser)
             }
 
         } else {
             banUser = msg.substring(msg.indexOf('Age > ') + 6, pos - 1);
-            client.say('#fodilhaodobosque', '/ban ' + banUser)
+            client.say('#dinobosss', '/ban ' + banUser)
         }
     } else {
         client.say('#xauxaubot', '!time ' + user);
