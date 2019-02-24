@@ -1,5 +1,7 @@
 const tmi = require('tmi.js');
 
+const streamer = "fodilhaodobosque";
+
 // Define configuration options
 const opts = {
   identity: {
@@ -8,7 +10,7 @@ const opts = {
   },
   channels: [
     "xauxaubot",
-    "dinobosss"
+    streamer
   ]
 };
 
@@ -47,12 +49,12 @@ function onMessageHandler (target, context, msg, self) {
 
             if(parseInt(minutes) < 5) {
                 banUser = msg.substring(msg.indexOf('Age > ') + 6, pos - 1);
-                client.say('#dinobosss', '/ban ' + banUser)
+                client.say('#' + streamer, '/ban ' + banUser)
             }
 
         } else {
             banUser = msg.substring(msg.indexOf('Age > ') + 6, pos - 1);
-            client.say('#dinobosss', '/ban ' + banUser)
+            client.say('#' + streamer, '/ban ' + banUser)
         }
     } else {
         client.say('#xauxaubot', '!time ' + user);
