@@ -1,6 +1,6 @@
 const tmi = require('tmi.js');
 
-const streamer = "fodilhaodobosque";
+const streamer = "dinobosss";
 
 // Define configuration options
 const opts = {
